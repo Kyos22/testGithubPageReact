@@ -1,0 +1,21 @@
+:root{
+    --main-text-color: #F7B829;
+    --text-color: #fff;
+    --h1-color: #C4CFDE;
+    --p-color: #878E99;
+    --bg-color: #212529;
+    
+    
+    --h2-font: 3rem;
+    --h4-font:2rem;
+    --sub-font:1.1rem;
+    --p-font: 1rem;
+  }
+  body{
+    color: var(--bg-color);
+    background-color: var(--bg-color);
+
+  }
+  html{
+    background-color: var(--bg-color);
+  }
