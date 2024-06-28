@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/testGithubPageReact/static/css/main.649b42e4.css",
-    "main.js": "/testGithubPageReact/static/js/main.24fa1a83.js",
+    "main.js": "/testGithubPageReact/static/js/main.2013f5d4.js",
     "static/js/453.2d326bc9.chunk.js": "/testGithubPageReact/static/js/453.2d326bc9.chunk.js",
     "static/media/aquarium.jpg": "/testGithubPageReact/static/media/aquarium.180b5f26171f6d90f718.jpg",
     "static/media/avatarblackwhite.jpg": "/testGithubPageReact/static/media/avatarblackwhite.7718a5aa5798a9ab1e2b.jpg",
@@ -9,11 +9,11 @@
     "static/media/avatar.jpg": "/testGithubPageReact/static/media/avatar.75a76fe9cb916364c4dd.jpg",
     "index.html": "/testGithubPageReact/index.html",
     "main.649b42e4.css.map": "/testGithubPageReact/static/css/main.649b42e4.css.map",
-    "main.24fa1a83.js.map": "/testGithubPageReact/static/js/main.24fa1a83.js.map",
+    "main.2013f5d4.js.map": "/testGithubPageReact/static/js/main.2013f5d4.js.map",
     "453.2d326bc9.chunk.js.map": "/testGithubPageReact/static/js/453.2d326bc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.649b42e4.css",
-    "static/js/main.24fa1a83.js"
+    "static/js/main.2013f5d4.js"
   ]
 }
