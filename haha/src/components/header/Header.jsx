@@ -4,6 +4,7 @@ import image from '../images/image1.png';
 import '../../App1.css';
 import avatar1 from '../images/avatarblackwhite.jpg';
 import Mainpage from '../Mainpage/Mainpage';
+import { Section2 } from '../section2/Section2';
 const Header = () => {
   return (
     <html>
@@ -37,12 +38,12 @@ const Header = () => {
                   <div className='content-header-side2'>
                   <div className='side1'>
                           <div className='content-side1'>
-                              <h1>Email</h1>
-                              <p>ccscsdccsdd</p>
+                              <h1>Phone</h1>
+                              <p>0767778778</p>
                           </div>
                           <div className='content-side1'>
-                              <h1>Birthday</h1>
-                              <p>22 October</p>
+                              <h1>Location</h1>
+                              <p>Ho Chi Minh City</p>
                           </div>
                       </div>
                       <div className='side1'>
@@ -61,9 +62,11 @@ const Header = () => {
             </div>
              </div>
         </div>
-        <section className="section2">
-          
-        </section>
+        <div className='sec'>
+             <div className='section2'>
+              <Section2/>
+             </div>
+        </div>
             
         
     </div>
