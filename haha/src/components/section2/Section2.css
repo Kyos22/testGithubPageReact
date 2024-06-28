@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -36,6 +38,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  transition: all .30s ease;
   
 }
 .section2-container .side1 ul{
@@ -67,7 +70,7 @@
 }
 .section2-container .side2{
     padding: 50px 35px; 
-  height: 120vh;
+  
   background-color: var(--bg-color);
   box-shadow:  10px 10px 20px rgba(199, 219, 154, 0.1), 
                   -10px -10px 20px rgba(199, 219, 154, 0.1),
@@ -84,13 +87,19 @@
 .imgg{
     min-width: 350px;
     height: 430px;
-    
+    border-radius: 13px;
+    overflow: hidden;
 }
 .imgg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 13px;
+    transition: all .50s ease;
+}
+.imgg img:hover{
+    transform: scale(1.05);
 }
 .content-card{
     
@@ -109,6 +118,14 @@
     color: var(--h1-color);
     font-weight: 600;
     margin-bottom: 15px;
+}
+.content-card h2 b{
+    color: var(--red-color);
+}
+.content-card h3{
+    color: var(--h1-color);
+    font-size: 31px;
+    font-weight: 500;
 }
 
 .p-tag{
@@ -162,6 +179,59 @@
     color: var(--bg-color);
     transform: translateY(-3px);
 }
+/*==========================================section2==============================================*/
+.side2 .section2{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 1rem;
+}
+.side2 .section2 .content-card h1{
+    font-family: "montserrat" , sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.section2 .content-card h2{
+    font-family: "montserrat" , sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    
+}
+.section2 .content-card h2 span{
+    color: var(--red-color); 
+}
+.section2 .content-card h3{
+    
+}
+.section2 .content-card .p-tag .link-linkedin{
+    color: var(--h1-color);
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+.side2 .section2 .imgg{
+    height: 500px;
+    min-width: 100%;
+    padding: 15px;
+    box-shadow: 10px 10px 20px rgba(199, 219, 154, 0.1), 
+                  -10px -10px 20px rgba(199, 219, 154, 0.1),
+                  10px -10px 20px rgba(199, 219, 154, 0.1),
+                  -10px 10px 20px rgba(199, 219, 154, 0.1);
+}
+.side2 .section2 .imgg1{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 13px;
+}
+.side2 .section2 .content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*================================responsive=====================================*/
 @media (max-width:1766px){
     .imgg{
     min-width: 100%;
@@ -175,12 +245,27 @@
     gap: 3rem;
 }
 }
+@media (max-width:1407px){
+    .side2 .section2 .imgg{
+        height: 500px;
+        width: 350px;
+        
+    }
+}
 @media (max-width:1244px){
     .section2-container{
     width: 100%;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 170px auto;
+}
+.side2 .section2 .imgg{
+    height: 470px;
+    width: 350px;
+    
+}
+.side2 .section2 .content-card{
+    padding: 0;
 }
 }
 @media (max-width:1190px){
@@ -196,7 +281,39 @@
     gap: 1rem;
 }
 .p-tag{
-    width: 100%;
+    width: 90%;
+}
+.side2 .section2 .content-card h1{
+    font-family: "montserrat" , sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.side2 .section2 .content-card .p-tag p{
+    font-size: 15px;
+}
+.section2 .content-card h2{
+    font-family: "montserrat" , sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+.section2 .content-card h2 span{
+    color: var(--red-color); 
+}
+.section2 .content-card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.section2 .content-card .p-tag .link-linkedin{
+    color: var(--h1-color);
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+.side2 .section2 .imgg{  
+   width: 100%;   
+   height: 420px;
 }
 }
 @media (max-width:998px){
@@ -255,6 +372,13 @@
     gap: 1rem;
     
 }
+.side2 .section2 .imgg{  
+    width: 100%;   
+    height: 380px;
+ }
+ .side2 .section2 .content-card h2{
+    font-size: 25px;
+}
 }
 @media (max-width: 757px) {
     .section2-container {
@@ -300,6 +424,16 @@
     height: 500px;
     
 }
+.side2 .section2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+.side2 .section2 .imgg{  
+    width: 100%;   
+    height: 650px;
+ }
 
 
 }
@@ -316,6 +450,10 @@
         padding: 16px ;
     
     }
+    .side2 .section2 .imgg{  
+        width: 100%;   
+        height: 600px;
+     }
 
 }
 @media (max-width: 519px) {
@@ -370,6 +508,7 @@
 }
 
 .p-tag{
+    margin-top: 15px;
     width: 100%;
 }
 .content-card p{
@@ -379,6 +518,17 @@
     font-weight: 400;
     margin-bottom: 30px;
 }
+.side2 .section2 .content-card h1{
+    text-align: left;
+}
+.side2 .section2 .content-card h2{
+    text-align: left;
+    font-size: 22px;
+}
+.side2 .section2 .imgg{  
+    width: 100%;   
+    height: 519px;
+ }
 
 }
 @media (max-width: 391px) {
@@ -403,7 +553,18 @@
     font-size: 12px;
 
 }
-
+.side2 .section2 .content-card h2{
+    text-align: left;
+    font-size: 20px;
+}
+.side2 .section2 .content-card h3{
+    text-align: left;
+    font-size: 19px;
+}
+.side2 .section2 .imgg{  
+    width: 100%;   
+    height: 450px;
+ }
 }
 
 

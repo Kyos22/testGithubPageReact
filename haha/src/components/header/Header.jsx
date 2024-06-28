@@ -65,6 +65,7 @@ const Header = () => {
         <div className='sec'>
              <div className='section2'>
               <Section2/>
+              
              </div>
         </div>
             
