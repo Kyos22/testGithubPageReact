@@ -1,0 +1,104 @@
+.container{
+    margin-top: 80px;
+    background-color: aquamarine;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow:  10px 10px 20px rgba(199, 219, 154, 0.1), 
+                  -10px -10px 20px rgba(199, 219, 154, 0.1),
+                  10px -10px 20px rgba(199, 219, 154, 0.01),
+                  -10px 10px 20px rgba(199, 219, 154, 0.0);  
+    display: flex;
+    
+}
+.container .card-img{
+    background: radial-gradient(circle, rgb(152, 150, 150) -10%, rgb(28, 28, 28) 100%);
+    min-width: 350px;
+    height: 350px;
+}
+.container .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px 0 4rem;
+    background: linear-gradient(to right, #1A1928 0%, #1E1F28 50%, #1E1F28 100%);
+    /*1A1928*/
+}
+.container .card-content h1{
+    color: var(--p-color);
+    font-size: var(--sub-font);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.container .card-content h2{
+    color: var(--h1-color);
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container .card-content p{
+    font-size: 15px;
+    color: var(--p-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.container .card-content a{
+    font-size: 15px;
+    color: var(--p-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+    transition: all .50s ease;
+}
+.container .card-content a:hover{
+    
+    color: var(--h1-color);
+    transform: translateX(3px);
+    
+}
+.container .card-content a i{
+    padding-right: 10px;
+}
+.horizon-line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(75, 75, 75);
+    margin-bottom: 30px;
+}
+@media (max-width:1784px){
+    .container .card-content h1{
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .container .card-content h2{
+        color: var(--h1-color);
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width:1784px){
+    .container .card-content{
+        padding: 0 30px 0 3rem;
+
+    }
+}
+@media (max-width:1615px){
+    .container .card-content h2{
+        color: var(--h1-color);
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:1157px){
+    .container .card-content{
+        padding: 0 70px 0 3rem;
+    }
+}

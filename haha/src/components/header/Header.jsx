@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./header.css";
 import image from '../images/image1.png';
 import '../../App1.css';
@@ -6,6 +6,12 @@ import avatar1 from '../images/avatarblackwhite.jpg';
 import Mainpage from '../Mainpage/Mainpage';
 import { Section2 } from '../section2/Section2';
 const Header = () => {
+  const [age,setAge] = useState(0);
+  useEffect(()=>{
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - 2003;
+    setAge(age);
+  })
   return (
     <html>
       <div className='general-template'>
@@ -24,11 +30,11 @@ const Header = () => {
                   </div>
                   <div className="conent-header1">
                     <h1>Kyos Nguyen</h1>
-                    <p>I am a fullstack developer</p>
+                    <p>I am a Fullstack Developer</p>
                     <ul>
-                      <li><a href=""><i class='bx bxl-facebook' style={{color:'#c4cfde'}}  ></i></a></li>
-                      <li><a href=""><i class='bx bxl-instagram' style={{color:'#c4cfde'}}  ></i></a></li>
-                      <li><a href=""><i class='bx bxl-linkedin' style={{color:'#c4cfde'}}  ></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100013789689193"><i class='bx bxl-facebook' style={{color:'#c4cfde'}}  ></i></a></li>
+                      <li><a href="https://www.instagram.com/kyos_oarsis.2202/"><i class='bx bxl-instagram' style={{color:'#c4cfde'}}  ></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/cong-nguyen-kyos-a8a729289/"><i class='bx bxl-linkedin' style={{color:'#c4cfde'}}  ></i></a></li>
                       
                     </ul>
                   </div>
@@ -52,8 +58,8 @@ const Header = () => {
                               <p>nguyenthanhcongvt123@gmail.com</p>
                           </div>
                           <div className='content-side1'>
-                              <h1>Birthday</h1>
-                              <p>22 October</p>
+                              <h1>Age</h1>
+                              <p>{age}</p>
                           </div>
                       </div>
                       

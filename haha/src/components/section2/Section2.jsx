@@ -2,7 +2,8 @@ import React from 'react'
 import '../section2/Section2.css';
 import avatar2 from '../images/avatar.jpg';
 import aquarium from '../images/aquarium.jpg';
-
+import Typical from 'react-typical';
+import { BannerSub } from '../bannerSub/BannerSub';
 export const Section2 = () => {
   return (
     <div className='section2-container'>
@@ -38,7 +39,13 @@ export const Section2 = () => {
             <div className='section2'>               
                 <div className='content-card'>
                     <h1>Hi there! I'M</h1>
-                    <h2>A Fullstack <br /> Developer <span>Kyos Nguyen</span></h2>
+                    <h2>A Fullstack <br /> Developer <span>
+                        <Typical
+                          steps={['Kyos Nguyen', 1000, 'Nguyen Thanh Cong', 1000]}
+                          loop={Infinity}
+                          wrapper="span"
+                        />
+                      </span></h2>
                     <h3>based in Ho Chi Minh, Viet Nam</h3>
                     <div className='p-tag'>
 <p> For a more comprehensive understanding of my qualifications and career achievements, please visit my <a className='link-linkedin' href="https://www.linkedin.com/in/cong-nguyen-kyos-a8a729289/">LinkedIn profile</a> .</p>
@@ -51,6 +58,7 @@ export const Section2 = () => {
                     </div>
                 </div>
             </div>
+            <BannerSub/>
         </div>
         
     </div>
