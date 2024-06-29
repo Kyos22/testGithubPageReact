@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Commendation.css'; // Đường dẫn tới file CSS của bạn
 import quotes from '../images/quote.png';
 import avatar2 from '../images/avatar.jpg';
@@ -58,6 +58,13 @@ export const Commendation = () => {
       prevSlide();
     }
   };
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3000); // Chuyển slide sau mỗi 5 giây
+
+    return () => clearInterval(slideInterval); // Clear interval khi component bị unmounted
+  }, []);
 
   const handleButtonClick = (e, action) => {
     e.stopPropagation(); // Ngăn chặn sự kiện touch từ ảnh hưởng đến nút bấm
@@ -66,12 +73,12 @@ export const Commendation = () => {
   
 
   return (
-    <div className='containerCommendation' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
+    <div className='containerCommendation' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}  >
       <div className='con-title'>
         <h1>What Clients Say</h1>
         <h2>Commendations</h2>
       </div>
-      <div className='con-container'>
+      <div className='con-container' >
       {slides.map((slide, index) => (
               <div
                 key={index}

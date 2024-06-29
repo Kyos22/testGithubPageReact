@@ -5,6 +5,9 @@ import '../../App1.css';
 import avatar1 from '../images/avatarblackwhite.jpg';
 import Mainpage from '../Mainpage/Mainpage';
 import { Section2 } from '../section2/Section2';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
 const Header = () => {
   const [age,setAge] = useState(0);
   useEffect(()=>{
@@ -70,14 +73,15 @@ const Header = () => {
         </div>
         <div className='sec'>
              <div className='section2'>
-              <Section2/>
-              
+              <Outlet/>
+              {/* <Mainpage/> */}
              </div>
         </div>
+        
             
         
     </div>
-    <Mainpage/>
+    
     </html>
   )
 }
