@@ -1,0 +1,204 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 88%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-item {
+  
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-item-content {
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  position: relative;
+  width: 96%;
+  margin-top: 6px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px #50661e33;
+  transition: all .30s ease;
+}
+.timeline-item-content:hover {
+    background-color: #111418;
+    box-shadow: 0 4px 8px #a1c74633;
+}
+
+.timeline-item-content .tag {
+  display: inline-block;
+  background-color: #f45b69;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.timeline-item-content h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.timeline-item-content .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timeline-item-content .institution {
+  font-size: 16px;
+  color: #888;
+}
+
+.timeline-item-content .rating {
+  background-color: #f45b69;
+  padding: 5px 10px;
+  border-radius: 4px;
+  float: right;
+  font-size: 16px;
+}
+
+.timeline-item-content .description {
+  margin: 10px 0 0;
+}
+
+.timeline-item-content .circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f45b69;
+  border-radius: 50%;
+  top: 34px;
+  left: -30px;
+  padding: 5px;
+}
+.timeline-item-content .circle .center-circle{
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.timeline-item-content .timeline-line {
+  position: absolute;
+  width: 50px; /* Chiều dài của đường nối */
+  height: 2px; /* Độ dày của đường nối */
+  background-color: #f45b69;
+  top: 43px; /* Điều chỉnh vị trí theo chiều dọc */
+  left: -15px; /* Điều chỉnh vị trí theo chiều ngang */
+  transition: all .30s ease;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #f45b69;
+  top: 45px;
+  bottom: 0;
+  left: 0px;
+  margin-left: -2px;
+  transition: all .30s ease;
+}
+.side2 .container-resume{
+    width: 100%;
+    display: flex;
+    gap: 1.8rem;
+    justify-content: space-between;
+}
+.left-resume{
+    background-color: transparent;
+    width: 50%;
+    
+}
+.right-resume{
+    background-color: transparent;
+    width: 50%;
+}
+.left-resume h1, .right-resume h1{
+    color: var(--red-color);
+    font-family: "montserrat" , sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    font-size: var(--p-font);
+}
+.left-resume h2, .right-resume h2{
+    color: var(--h1-color);
+    font-family: "montserrat" , sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 29px;
+}
+@media (max-width:1190px){
+    .left-resume h1, .right-resume h1{
+    font-size: 14px;
+}
+.left-resume h2, .right-resume h2{
+    font-size: 29px;
+}
+.description{
+    font-size: 13px;
+}
+}
+@media (max-width:667px){
+    .side2 .container-resume{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: space-between;
+}
+.left-resume{
+    background-color: transparent;
+    width: 100%;
+    
+}
+.right-resume{
+    background-color: transparent;
+    width: 100%;
+}
+.timeline {
+  height: 780px;
+}
+}
+@media (max-width:559px){
+    .timeline {
+  height: 830px;
+}
+}
+@media (max-width:493px){
+    .timeline-item-content {
+  padding: 20px;
+  
+}
+.timeline {
+  height: 800px;
+}
+}
+@media (max-width:411px){
+    
+.timeline {
+  height: 850px;
+}
+}
+@media (max-width:345px){
+    
+.timeline {
+  height: 870px;
+}
+}

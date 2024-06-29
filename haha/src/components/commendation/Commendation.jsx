@@ -1,29 +1,41 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Commendation.css'; // Đường dẫn tới file CSS của bạn
 import quotes from '../images/quote.png';
-import avatar2 from '../images/avatar.jpg';
-import image from '../images/aquarium.jpg';
+import triphan from '../images/triphan.jpg';
+import lytuan from '../images/lytuan.jpg';
+import ryannguyen from '../images/ryanngueyn.jpg';
+
 
 const slides = [
   {
     id: 1,
-    image: avatar2,
-    nameCompany: "SofTech",
-    name: "Tri Phan",
-    Position: "Operating Officer",
-    title: 'Web App Development',
-    date: 'Upword - Mar 4, 2016 - Aug 30, 2021',
-    description: 'CNTT ngày càng trở thành lựa chọn của nhiều bạn trẻ nhiệt huyết, yêu thích lĩnh vực công nghệ. Và cơ hội việc làm của ngành CNTT cũng mang đến cho bạn nhiều lựa chọn hấp dẫn.'
+    image: ryannguyen,
+    nameCompany: "Ngo Thom",
+    name: "Ryan Nguyen",
+    Position: "Ngo Thom's Co-Foundation",
+    title: 'UI/UX Design',
+    date: '7/2023 - Now',
+    description: 'Công (Kyos) is an exceptional Fullstack Developer. Despite having just one year of experience, he has demonstrated remarkable skills and dedication. His ability to understand complex problems and provide efficient solutions is impressive'
   },
   {
     id: 2,
-    image: image,
-    nameCompany: "Vietlink",
-    name: "Phong Tran",
-    Position: "Fullstack Developer",
-    title: 'UI/UX Design',
-    date: 'Upword - Jan 5, 2018 - Dec 15, 2020',
-    description: 'Thiết kế UI/UX đóng vai trò quan trọng trong việc nâng cao trải nghiệm người dùng, giúp sản phẩm của bạn nổi bật và thu hút khách hàng.'
+    image: lytuan,
+    nameCompany: "All In Vain",
+    name: "Ly Tuan",
+    Position: "President",
+    title: 'Game Developer',
+    date: '5/2019 - Now',
+    description: 'Kyos Nguyen work ethic and passion for coding are unparalleled. He has a keen eye for detail and a deep understanding of user experience design, which greatly enhances the quality of his work. His contributions to our projects have been significant.'
+  },
+  {
+    id: 3,
+    image: triphan,
+    nameCompany: "NavSoft",
+    name: "Tri Phan",
+    Position: "Product Manager",
+    title: 'FullStack Developer',
+    date: 'NavSoft/5 Jan 2017 - 2022',
+    description: 'As a mentor of Cong, I see great potential in him and recognize his self-learning ability and creativity. I am impressed with his projects.'
   }
   // Thêm các slide khác tương tự
 ];
@@ -61,7 +73,7 @@ export const Commendation = () => {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3000); // Chuyển slide sau mỗi 5 giây
+    }, 4000); // Chuyển slide sau mỗi 5 giây
 
     return () => clearInterval(slideInterval); // Clear interval khi component bị unmounted
   }, []);
