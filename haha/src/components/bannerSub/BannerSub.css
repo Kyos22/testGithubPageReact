@@ -1,6 +1,6 @@
 .container{
     margin-top: 80px;
-    background-color: aquamarine;
+    
     border-radius: 13px;
     overflow: hidden;
     box-shadow:  10px 10px 20px rgba(199, 219, 154, 0.1), 
@@ -14,6 +14,7 @@
     background: radial-gradient(circle, rgb(152, 150, 150) -10%, rgb(28, 28, 28) 100%);
     min-width: 350px;
     height: 350px;
+    transition: all .50s ease;
 }
 .container .card-img img{
     width: 100%;
@@ -99,6 +100,102 @@
 }
 @media (max-width:1157px){
     .container .card-content{
-        padding: 0 70px 0 3rem;
+        padding: 0 30px 0 2rem;
+    }
+}
+@media (max-width:908px){
+    .container .card-img{
+        min-width: 300px;
+        height: 300px;
+    }
+    .container .card-content h1{       
+        font-size: 13pxpx;
+        margin-bottom: 8px;
+    }
+    .container .card-content h2{       
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .container .card-content p{       
+        font-size: 14px;
+        
+    }
+    .container .card-content a{       
+        font-size: 14px;
+        
+    }
+}
+@media (max-width:822px){
+    .container .card-img{
+        min-width: 250px;
+        height: 300px;
+    }
+}
+@media (max-width:770px){
+    .container .card-img{
+        
+        min-width: 230px;
+    }
+    .container .card-content p{       
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .horizon-line{
+        margin-bottom: 15px;
+    }
+    .container .card-content h2{       
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+}
+@media (max-width:715px){
+    .container{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container .card-content{
+        padding: 20px 10px 0 20px;
+    }
+    .container .card-img{        
+        width: 100%;      
+    }
+    .container .card-content h1{
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .container .card-content h2{
+        font-size: 26px;
+        margin-bottom: 7px;
+    }
+    .container .card-content p{
+        font-size: 14px;
+        color: var(--p-color);
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .container .card-content a{
+        font-size: 14px;
+        color: var(--p-color);
+        font-weight: 400;
+        margin-bottom: 15px;
+        transition: all .50s ease;
+    }
+}
+@media (max-width:390px){
+    .container .card-content h1{
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+    .container .card-content p{
+        font-size: 13px;
+    }
+    .container .card-content a{
+        font-size: 13px;
+    }
+    .container .card-content h2{
+        font-size: 20px;
+        margin-bottom: 7px;
     }
 }
