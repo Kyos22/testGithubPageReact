@@ -4,6 +4,8 @@ import avatar2 from '../images/avatar.jpg';
 import aquarium from '../images/aquarium.jpg';
 import Typical from 'react-typical';
 import { BannerSub } from '../bannerSub/BannerSub';
+import { Service } from '../service/Service';
+import { Commendation } from '../commendation/Commendation';
 export const Section2 = () => {
   return (
     <div className='section2-container'>
@@ -59,6 +61,12 @@ export const Section2 = () => {
                 </div>
             </div>
             <BannerSub/>
+            <Service/>
+            
+                {/* <div className='horizone-line-athomepage'></div> */}
+            
+            <Commendation/>
+
         </div>
         
     </div>

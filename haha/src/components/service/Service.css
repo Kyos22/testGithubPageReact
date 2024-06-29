@@ -1,0 +1,92 @@
+.serviceContainer .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.serviceContainer{
+    background-color: transparent;
+    
+}
+.serviceContainer .container h1{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+    color: var(--h1-color);
+    font-weight: 600;
+}
+.serviceContainer .container .cards{
+    display: flex;
+    margin-top: 28px;
+    gap: 2rem;
+    transition: all .50s ease;
+}
+.serviceContainer .container .cards .card{
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #525050;
+    border-radius: 13px;
+    padding: 0 4% 30px ;
+    transition: all .50s ease;
+    min-width: 40%;
+}
+.serviceContainer .container .cards .card:hover{
+    transform: scale(0.95);
+}
+.serviceContainer .container .cards .card i{
+    font-size: 4rem;
+    margin-top: 30px;
+    transition: all .50s ease;
+}
+.serviceContainer .container .cards .card h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--h1-color);
+    font-weight: 600;
+    transition: all .50s ease;
+}
+.serviceContainer .container .cards .card p{
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: var(--p-color);
+    transition: all .50s ease;
+}
+@media (max-width:1099px){
+    .serviceContainer .container .cards .card i{
+    font-size: 3.5rem;
+}
+    .serviceContainer .container .cards .card h2{
+    font-size: 1.3rem;
+}
+}
+@media (max-width:841px){
+    .serviceContainer .container .cards{
+    gap: 1.5rem;
+}
+.serviceContainer .container .cards .card p{
+    font-size: 0.8rem;
+}
+}
+@media (max-width:773px){
+    .serviceContainer .container .cards .card h2{
+    font-size: 1.2rem;
+}
+}
+@media (max-width:639px){
+    .serviceContainer .container .cards .card h2{
+    font-size: 1.1rem;
+}
+
+.serviceContainer .container .cards .card i{
+    font-size: 3.1rem;
+}
+}
+@media (max-width:543px){
+    .serviceContainer .container .cards{
+    gap: 1rem;
+}
+.serviceContainer .container{
+    margin-top: 30px;
+}
+}

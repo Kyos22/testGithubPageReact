@@ -32,7 +32,7 @@
                   -10px -10px 20px rgba(199, 219, 154, 0.1),
                   10px -10px 20px rgba(199, 219, 154, 0.01),
                   -10px 10px 20px rgba(199, 219, 154, 0.0);    
-  height: 50vh;
+  max-height: 500px;
   border-radius: 13px;
   display: flex;
   justify-content: center;
