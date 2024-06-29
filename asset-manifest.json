@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testGithubPageReact/static/css/main.a890d84f.css",
-    "main.js": "/testGithubPageReact/static/js/main.1c311d97.js",
+    "main.css": "/testGithubPageReact/static/css/main.9f26cb94.css",
+    "main.js": "/testGithubPageReact/static/js/main.0b0fc5d5.js",
     "static/js/453.8220c9d7.chunk.js": "/testGithubPageReact/static/js/453.8220c9d7.chunk.js",
     "static/media/aquarium.jpg": "/testGithubPageReact/static/media/aquarium.180b5f26171f6d90f718.jpg",
     "static/media/lytuan.jpg": "/testGithubPageReact/static/media/lytuan.7c4090b22781102319e9.jpg",
@@ -12,12 +12,12 @@
     "static/media/avatar.jpg": "/testGithubPageReact/static/media/avatar.75a76fe9cb916364c4dd.jpg",
     "static/media/triphan.jpg": "/testGithubPageReact/static/media/triphan.f3fa302004d0f801099e.jpg",
     "index.html": "/testGithubPageReact/index.html",
-    "main.a890d84f.css.map": "/testGithubPageReact/static/css/main.a890d84f.css.map",
-    "main.1c311d97.js.map": "/testGithubPageReact/static/js/main.1c311d97.js.map",
+    "main.9f26cb94.css.map": "/testGithubPageReact/static/css/main.9f26cb94.css.map",
+    "main.0b0fc5d5.js.map": "/testGithubPageReact/static/js/main.0b0fc5d5.js.map",
     "453.8220c9d7.chunk.js.map": "/testGithubPageReact/static/js/453.8220c9d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a890d84f.css",
-    "static/js/main.1c311d97.js"
+    "static/css/main.9f26cb94.css",
+    "static/js/main.0b0fc5d5.js"
   ]
 }
