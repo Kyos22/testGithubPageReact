@@ -231,6 +231,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.section2-container .side1 ul li.active {
+    background-color: #FF014F;
+}
 
 /*================================responsive=====================================*/
 @media (max-width:1766px){
