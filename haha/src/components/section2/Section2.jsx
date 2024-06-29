@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import '../section2/Section2.css';
 import avatar2 from '../images/avatar.jpg';
 import aquarium from '../images/aquarium.jpg';
@@ -18,6 +18,10 @@ export const Section2 = () => {
         setActiveButton(buttonName);
         navigate(path);
     }
+    useEffect(() => {
+        // Thiết lập activeButton khi component được mount
+        setActiveButton(location.pathname === '/testGithubPageReact' ? 'about' : '');
+    }, [location.pathname]);
     return (
     <div className='section2-container'>
         <div className='side1'>
