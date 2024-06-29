@@ -105,7 +105,6 @@ export const Resume = () => {
                     <div class="timeline-item">
                         <div class="timeline-item-content">
                         <span class="tag" style={{background: "#f45b69"}}>2020 - 2022</span>
-                        <span class="rating">credit</span>
                         <h3>3rd Prize Of Techwiz 2023</h3>
                         
                         <p class="institution">Techwiz global I.T Competition</p>

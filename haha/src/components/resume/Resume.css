@@ -180,6 +180,11 @@ body {
     .timeline {
   height: 830px;
 }
+.timeline-item-content .rating {
+  padding: 5px 10px;
+  
+  font-size: 14px;
+}
 }
 @media (max-width:493px){
     .timeline-item-content {
@@ -189,11 +194,30 @@ body {
 .timeline {
   height: 800px;
 }
+.timeline-item-content .circle {
+  
+  top: 24px;
+  
+}
+.timeline-item-content .timeline-line {
+  position: absolute;
+  width: 50px; /* Chiều dài của đường nối */
+  height: 2px; /* Độ dày của đường nối */
+  background-color: #f45b69;
+  top: 33px; /* Điều chỉnh vị trí theo chiều dọc */
+  left: -15px; /* Điều chỉnh vị trí theo chiều ngang */
+  transition: all .30s ease;
+}
 }
 @media (max-width:411px){
     
 .timeline {
   height: 850px;
+}
+.timeline-item-content .rating {
+  padding: 5px 10px;
+  
+  font-size: 12px;
 }
 }
 @media (max-width:345px){
