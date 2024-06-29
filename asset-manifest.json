@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/KyosNguyen/static/css/main.6f299ff6.css",
-    "main.js": "/KyosNguyen/static/js/main.436fb7f1.js",
-    "static/js/453.2d326bc9.chunk.js": "/KyosNguyen/static/js/453.2d326bc9.chunk.js",
-    "static/media/aquarium.jpg": "/KyosNguyen/static/media/aquarium.180b5f26171f6d90f718.jpg",
-    "static/media/avatarblackwhite.jpg": "/KyosNguyen/static/media/avatarblackwhite.7718a5aa5798a9ab1e2b.jpg",
-    "static/media/image1.png": "/KyosNguyen/static/media/image1.d24f7b0f50f3f7443dd2.png",
-    "static/media/avatar-swe.png": "/KyosNguyen/static/media/avatar-swe.62408c001fc16def4725.png",
-    "static/media/avatar.jpg": "/KyosNguyen/static/media/avatar.75a76fe9cb916364c4dd.jpg",
-    "index.html": "/KyosNguyen/index.html",
-    "main.6f299ff6.css.map": "/KyosNguyen/static/css/main.6f299ff6.css.map",
-    "main.436fb7f1.js.map": "/KyosNguyen/static/js/main.436fb7f1.js.map",
-    "453.2d326bc9.chunk.js.map": "/KyosNguyen/static/js/453.2d326bc9.chunk.js.map"
+    "main.css": "/testGithubPageReact/static/css/main.6f299ff6.css",
+    "main.js": "/testGithubPageReact/static/js/main.020a4de7.js",
+    "static/js/453.2d326bc9.chunk.js": "/testGithubPageReact/static/js/453.2d326bc9.chunk.js",
+    "static/media/aquarium.jpg": "/testGithubPageReact/static/media/aquarium.180b5f26171f6d90f718.jpg",
+    "static/media/avatarblackwhite.jpg": "/testGithubPageReact/static/media/avatarblackwhite.7718a5aa5798a9ab1e2b.jpg",
+    "static/media/image1.png": "/testGithubPageReact/static/media/image1.d24f7b0f50f3f7443dd2.png",
+    "static/media/avatar-swe.png": "/testGithubPageReact/static/media/avatar-swe.62408c001fc16def4725.png",
+    "static/media/avatar.jpg": "/testGithubPageReact/static/media/avatar.75a76fe9cb916364c4dd.jpg",
+    "index.html": "/testGithubPageReact/index.html",
+    "main.6f299ff6.css.map": "/testGithubPageReact/static/css/main.6f299ff6.css.map",
+    "main.020a4de7.js.map": "/testGithubPageReact/static/js/main.020a4de7.js.map",
+    "453.2d326bc9.chunk.js.map": "/testGithubPageReact/static/js/453.2d326bc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f299ff6.css",
-    "static/js/main.436fb7f1.js"
+    "static/js/main.020a4de7.js"
   ]
 }
