@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testGithubPageReact/static/css/main.b6ec562b.css",
-    "main.js": "/testGithubPageReact/static/js/main.0e4a6a86.js",
+    "main.css": "/testGithubPageReact/static/css/main.9f647521.css",
+    "main.js": "/testGithubPageReact/static/js/main.dfe0e1ab.js",
     "static/js/453.2d326bc9.chunk.js": "/testGithubPageReact/static/js/453.2d326bc9.chunk.js",
     "static/media/aquarium.jpg": "/testGithubPageReact/static/media/aquarium.180b5f26171f6d90f718.jpg",
     "static/media/avatarblackwhite.jpg": "/testGithubPageReact/static/media/avatarblackwhite.7718a5aa5798a9ab1e2b.jpg",
@@ -9,12 +9,12 @@
     "static/media/avatar-swe.png": "/testGithubPageReact/static/media/avatar-swe.62408c001fc16def4725.png",
     "static/media/avatar.jpg": "/testGithubPageReact/static/media/avatar.75a76fe9cb916364c4dd.jpg",
     "index.html": "/testGithubPageReact/index.html",
-    "main.b6ec562b.css.map": "/testGithubPageReact/static/css/main.b6ec562b.css.map",
-    "main.0e4a6a86.js.map": "/testGithubPageReact/static/js/main.0e4a6a86.js.map",
+    "main.9f647521.css.map": "/testGithubPageReact/static/css/main.9f647521.css.map",
+    "main.dfe0e1ab.js.map": "/testGithubPageReact/static/js/main.dfe0e1ab.js.map",
     "453.2d326bc9.chunk.js.map": "/testGithubPageReact/static/js/453.2d326bc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6ec562b.css",
-    "static/js/main.0e4a6a86.js"
+    "static/css/main.9f647521.css",
+    "static/js/main.dfe0e1ab.js"
   ]
 }
