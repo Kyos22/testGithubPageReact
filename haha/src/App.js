@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import { Section2 } from './components/section2/Section2';
 import { About } from './components/about/About';
 import { Resume } from './components/resume/Resume'; // Thêm component Resume (cần tạo mới)
+import { Work } from './components/work/Work';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path='' element={<Section2 />}>
               <Route index element={<About />} />
               <Route path='resume' element={<Resume />} />
+              <Route path='work' element={<Work />} />
               {/* Các tuyến đường khác */}
             </Route>
           </Route>
