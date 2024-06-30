@@ -9,12 +9,12 @@ import { Commendation } from '../commendation/Commendation';
 
 export const About = () => {
   return (
-    <div className='side2'>
+    <div className='side2' data-aos="fade-down-right">
             <div className='section1'>
-                <div className='imgg'>
+                <div className='imgg' data-aos="fade-down-right">
                     <img src={avatar2} alt="" />
                 </div>
-                <div className='content-card'>
+                <div className='content-card' data-aos="fade-right">
                     <h1>Visit my portfolio & hire me</h1>
                     <h2>About Me</h2>
                     <div className='p-tag'>
@@ -30,7 +30,7 @@ export const About = () => {
             </div>
             {/* ============================================================================================ */}
             <div className='section2'>               
-                <div className='content-card'>
+                <div className='content-card' data-aos="fade-right">
                     <h1>Hi there! I'M</h1>
                     <h2>A Fullstack <br /> Developer <span>
                         <Typical
@@ -45,7 +45,7 @@ export const About = () => {
                     </div>
                     
                 </div>
-                <div className='imgg'>
+                <div className='imgg' data-aos="fade-right">
                     <div className='imgg1'>
                     <img src={aquarium} alt="" />
                     </div>

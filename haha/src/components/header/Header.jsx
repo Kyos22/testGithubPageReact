@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./header.css";
-import image from '../images/image1.png';
+
 import '../../App1.css';
 import avatar1 from '../images/avatarblackwhite.jpg';
 import Mainpage from '../Mainpage/Mainpage';
@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <html>
       <div className='general-template'>
-        <section id='section-background' className='background-img'>
+        <section id='section-background' className='background-img' data-aos="fade-in">
             <img src={city} alt="" />
             
         </section>
@@ -27,12 +27,13 @@ const Header = () => {
              <div className='sec1'>
              <div className="header">
                 <div className="header-side1">
-                  <div className='img-avatar1'>
+                  <div className='img-avatar1'  >
+                  {/* data-aos="zoom-out" */}
                     <div className='img-avatar'>
                     <img src={avatar1} alt="" />
                     </div>
                   </div>
-                  <div className="conent-header1">
+                  <div className="conent-header1"  data-aos="zoom-out">
                     <h1>Kyos Nguyen</h1>
                     <p>I am a Fullstack Developer</p>
                     <ul>
@@ -44,7 +45,7 @@ const Header = () => {
                   </div>
                 </div>
                 
-                <div className='header-side2'>
+                <div className='header-side2'  data-aos="zoom-in">
                   <div className='content-header-side2'>
                   <div className='side1'>
                           <div className='content-side1'>

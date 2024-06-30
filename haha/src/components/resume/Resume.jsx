@@ -2,12 +2,12 @@ import React from 'react'
 import '../resume/Resume.css'
 export const Resume = () => {
   return (
-    <div className='side2'>
+    <div className='side2' data-aos="fade-down-left">
         <div className="container-resume">
             <div className="left-resume">
-                <h1>2020 - 2024</h1>
-                <h2>Education & Trainning Timeline</h2>
-                <div class="timeline">
+                <h1 data-aos="fade-down-right">2020 - 2024</h1>
+                <h2 data-aos="fade-down-right">Education & Trainning Timeline</h2>
+                <div class="timeline" data-aos="fade-right">
                     <div class="timeline-item">
                         <div class="timeline-item-content">
                         <span class="tag" style={{background: "#f45b69"}}>2022 - 2024</span>
@@ -64,9 +64,9 @@ export const Resume = () => {
 
             </div>  
             <div className="right-resume">
-            <h1>2020-2024</h1>
-                <h2>Certifications & Award</h2>
-                <div class="timeline">
+            <h1 data-aos="fade-down-left">2020-2024</h1>
+                <h2 data-aos="fade-down-left">Certifications & Award</h2>
+                <div class="timeline" data-aos="fade-left">
                     <div class="timeline-item">
                         <div class="timeline-item-content">
                         <span class="tag" style={{background: "#f45b69"}}>April 2023</span>

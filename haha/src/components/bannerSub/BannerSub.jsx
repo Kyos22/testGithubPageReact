@@ -9,7 +9,7 @@ export const BannerSub = () => {
     alert('feature coming soon');
   }
   return (
-    <div className='container'>
+    <div className='container' data-aos="flip-up">
        
           <div className='card-img'>
             <img src={image} alt="" />

@@ -19,7 +19,7 @@ export const Section2 = () => {
 
     return (
         <div className='section2-container'>
-            <div className='side1'>
+            <div className='side1' data-aos="fade-down-right">
                 <ul>
                     <li
                         onClick={() => handleNavigate('/testGithubPageReact', 'about')}

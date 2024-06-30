@@ -86,7 +86,7 @@ export const Commendation = () => {
 
   return (
     <div className='containerCommendation' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}  >
-      <div className='con-title'>
+      <div className='con-title' data-aos="fade-right">
         <h1>What Clients Say</h1>
         <h2>Commendations</h2>
       </div>
@@ -97,7 +97,7 @@ export const Commendation = () => {
                 className={`content-slide ${index === currentSlide ? 'active' : ''}`}
                 style={{ display: index === currentSlide ? 'block' : 'none' }}
               >
-                <div className='card-img'>
+                <div className='card-img' data-aos="fade-down">
           <div className='img'>
             <img src={slide.image} alt="Avatar" />
           </div>
@@ -110,7 +110,7 @@ export const Commendation = () => {
               </div>
             ))}
         <div className='side2-commendation'>
-          <div className='content-above'>
+          <div className='content-above' >
             <img src={quotes} alt="Quotes" />
             <div className='button-container'>
         <a className='eachButton' onClick={prevSlide}>
@@ -121,7 +121,7 @@ export const Commendation = () => {
         </a>
       </div>
           </div>
-          <div className='content-below' >
+          <div className='content-below' data-aos="fade-up" >
             {slides.map((slide, index) => (
               <div key={index}
                 className={`content-slide ${index === currentSlide ? 'active' : ''}`}
