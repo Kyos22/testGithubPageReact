@@ -50,6 +50,7 @@ body {
 .timeline-item-content h3 {
   font-size: 24px;
   margin: 0 0 10px;
+  color: #fff;
 }
 
 .timeline-item-content .title {
@@ -72,6 +73,7 @@ body {
 
 .timeline-item-content .description {
   margin: 10px 0 0;
+  color: var(--p-color);
 }
 
 .timeline-item-content .circle {

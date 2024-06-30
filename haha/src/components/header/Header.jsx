@@ -7,6 +7,7 @@ import Mainpage from '../Mainpage/Mainpage';
 import { Section2 } from '../section2/Section2';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+import city from '../images/avatar-rotate.jpg';
 
 const Header = () => {
   const [age,setAge] = useState(0);
@@ -19,7 +20,7 @@ const Header = () => {
     <html>
       <div className='general-template'>
         <section id='section-background' className='background-img'>
-            <img src={avatar1} alt="" />
+            <img src={city} alt="" />
             
         </section>
         <div className='sec'>
