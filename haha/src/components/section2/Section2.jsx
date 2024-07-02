@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import '../section2/Section2.css';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 
@@ -6,6 +6,7 @@ export const Section2 = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [activeButton, setActiveButton] = useState('');
+    const outletRef = useRef(null);
 
     useEffect(() => {
         const path = location.pathname.split('/').pop();
@@ -16,10 +17,14 @@ export const Section2 = () => {
         setActiveButton(buttonName);
         navigate(path);
     };
-
+    useEffect(() => {
+        if (outletRef.current) {
+            outletRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [location.pathname]);
     return (
         <div className='section2-container'>
-            <div className='side1' data-aos="fade-down-right">
+            <div className='side1' >
                 <ul>
                     <li
                         onClick={() => handleNavigate('/testGithubPageReact', 'about')}
@@ -53,7 +58,9 @@ export const Section2 = () => {
                     </li>
                 </ul>
             </div>
-            <Outlet />
+            <div ref={outletRef}>
+                <Outlet />
+            </div>
         </div>
     );
 };

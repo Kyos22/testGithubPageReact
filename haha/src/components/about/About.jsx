@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useEffect } from 'react';
 import avatar2 from '../images/avatar.jpg';
 import aquarium from '../images/aquarium.jpg';
 import Typical from 'react-typical';
@@ -8,6 +8,9 @@ import { Service } from '../service/Service';
 import { Commendation } from '../commendation/Commendation';
 
 export const About = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
   return (
     <div className='side2' data-aos="fade-down-right">
             <div className='section1'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../resume/Resume.css';
 import csharp from '../images/csharp.png';
 import aspnet from '../images/logo/asp.net-removebg-preview.png';
@@ -24,6 +24,7 @@ import heidi from '../images/logo/heidi.png';
 
 
 export const Resume = () => {
+    
     const skills = [
         {id:1,imageLogo: csharp},
         {id:2,imageLogo: aspnet},
