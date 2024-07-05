@@ -10,6 +10,9 @@ import { Outlet } from 'react-router-dom';
 import city from '../images/avatar-rotate.jpg';
 
 const Header = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+},[]);
   const [age,setAge] = useState(0);
   useEffect(()=>{
     const currentYear = new Date().getFullYear();

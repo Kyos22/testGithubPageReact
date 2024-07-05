@@ -1,4 +1,5 @@
-import React, { useState,useRef, useEffect } from 'react';
+import React from 'react'
+import { useState,useRef } from 'react';
 import '../work/Work.css';
 import image from '../images/aquarium.jpg';
 import image1 from '../images/csharp.png';
@@ -6,14 +7,15 @@ import luattamthuc from '../images/books/luattamthuc.png';
 import garbageTruck from '../images/books/garbageTruck.png';
 import imGifted from '../images/books/image-removebg-preview.png';
 import homo from '../images/books/homosapiens.webp';
+import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 
-export const Work = () => {
-    
+
+export const Work1 = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isModalGalleryOpen, setIsModalGalleryOpen] = useState(false);
     const [isModalVideoOpen, setIsModalVideoOpen] = useState(false);
-    const [selectedCard, setSelectedCard] = useState(null);
     const modalRef = useRef();
+    const navigate = useNavigate();
     const cards = [
         {
             id: 1,
@@ -38,29 +40,13 @@ Tuổi trẻ được ví như một nguồn năng lượng vô tận, một th�
            
             details: 'This is a detailed description of the Showroom Management System...'
         },
-        {
-            id: 3,
-            title: 'Gallery',
-            date: 'October 2023',
-            description: 'Showroom Management System',
-            image: image,
-            details: 'This is a detailed description of the Showroom Management System...'
-        },
-        {
-            id: 4,
-            title: 'Gallery',
-            date: 'October 2023',
-            description: 'Showroom Management System',
-            image: image,
-            details: 'This is a detailed description of the Showroom Management System...'
-        },
-        // Thêm các card khác nếu cần
+       
     ];
 
     const openModal = (card) => {
-        setSelectedCard(card);
-        checkTitle(card.title);
-        console.log(card.title);
+        // setSelectedCard(card);
+        // checkTitle(card.title);
+        navigate('/detailWork',{state: {card}});
     };
 
     const checkTitle = (title) => {
@@ -71,20 +57,16 @@ Tuổi trẻ được ví như một nguồn năng lượng vô tận, một th�
         }
     };
 
-    const closeModal = () => {
-        setSelectedCard(null);
-        setIsModalGalleryOpen(false);
-        setIsModalVideoOpen(false);
+    // const closeModal = () => {
+    //     setSelectedCard(null);
+    //     setIsModalGalleryOpen(false);
+    //     setIsModalVideoOpen(false);
         
-    };
+    // };
 
 
 
-    const handleOutsideClick = (event) => {
-        if (event.target.className === 'modal') {
-            closeModal();
-        }
-    };
+    
 
     return (
         <div className='side2' data-aos="fade-down-right">
@@ -103,16 +85,11 @@ Tuổi trẻ được ví như một nguồn năng lượng vô tận, một th�
                 ))}
             </div>
 
-            {isModalGalleryOpen && selectedCard && (
+            {/* {isModalGalleryOpen && selectedCard && (
                 <div className="modal" onClick={handleOutsideClick} >
                     <div className="modal-content">
                         <span className="close-button" onClick={closeModal}>&times;</span>
-                        {/* <img src={selectedCard.imageMain} alt={selectedCard.title} className="modal-image"/>
-                        <h1>{selectedCard.title}</h1>
-                        <label><i className='bx bx-calendar' style={{ color: '#bcb9b9' }} ></i> {selectedCard.date}</label>
-                        <p>{selectedCard.description}</p>
-                  
-                        <p>{selectedCard.details}</p>  */}
+
                         <div className="blog-modal">
                             <img src={selectedCard.imageMain} alt={selectedCard.title} className="modal-image"/>
                             <h1>{selectedCard.description}</h1>
@@ -139,8 +116,8 @@ Tuổi trẻ được ví như một nguồn năng lượng vô tận, một th�
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
 
         </div>
     );
-};
+}

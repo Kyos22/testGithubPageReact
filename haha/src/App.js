@@ -7,6 +7,8 @@ import { About } from './components/about/About';
 import { Resume } from './components/resume/Resume'; // Thêm component Resume (cần tạo mới)
 import { Work } from './components/work/Work';
 import { Contact } from './components/contact/Contact';
+import { Work1 } from './components/work1/Work1';
+import { DetailWork } from './components/DetailWork/DetailWork';
 
 function App() {
   return (
@@ -18,11 +20,14 @@ function App() {
             <Route path='' element={<Section2 />}>
               <Route index element={<About />} />
               <Route path='resume' element={<Resume />} />
-              <Route path='work' element={<Work />} />
+              <Route path='blog' element={<Work />} />
+              <Route path='work' element={<Work1 />} />
               <Route path='contact' element={<Contact />} />
-              {/* Các tuyến đường khác */}
             </Route>
           </Route>
+          <Route path='/detailWork' element={<DetailWork />} />
+
+          
         </Routes>
       </Router>
     </>
