@@ -211,6 +211,14 @@
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
+.modal-content .gallery-modal .gallery-image-container .img-gallery{
+    width: 100%;
+    max-height: 200px;
+   border-radius: 7px;
+   overflow: hidden;
+   background-color: #fff;
+}
 }
 @media (max-width:551px){
     .container-work .card-work .card-image-work{
@@ -259,6 +267,22 @@
     margin-bottom: 1rem;
 }
 
+.modal-content .gallery-modal .gallery-image-container .img-gallery{
+    width: 100%;
+    max-height: 140px;
+   border-radius: 7px;
+   overflow: hidden;
+   background-color: #fff;
+}
+
+}
+@media (max-width:383px){
+    .modal-content .gallery-modal .gallery-image-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+    
 }
 @media (max-width:354px){
     .modal-image{
