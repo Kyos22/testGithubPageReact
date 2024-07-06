@@ -1,10 +1,35 @@
 {
   "files": {
-    "main.css": "/testGithubPageReact/static/css/main.947b4f5c.css",
-    "main.js": "/testGithubPageReact/static/js/main.9729479a.js",
-    "static/js/453.8220c9d7.chunk.js": "/testGithubPageReact/static/js/453.8220c9d7.chunk.js",
+    "main.css": "/testGithubPageReact/static/css/main.34dac1f5.css",
+    "main.js": "/testGithubPageReact/static/js/main.a01cc564.js",
+    "static/js/453.85f347c4.chunk.js": "/testGithubPageReact/static/js/453.85f347c4.chunk.js",
+    "static/media/taphoanamiya.jpg": "/testGithubPageReact/static/media/taphoanamiya.e5038ca2d6cddb13ca46.jpg",
+    "static/media/tencuatrochoi.jpg": "/testGithubPageReact/static/media/tencuatrochoi.7392d4ca466952cf082f.jpg",
+    "static/media/vuanmang.jpg": "/testGithubPageReact/static/media/vuanmang.074c5da564b766db6a4b.jpg",
+    "static/media/nghicanx.jpg": "/testGithubPageReact/static/media/nghicanx.7be767be54587d649a73.jpg",
+    "static/media/naoko.jpg": "/testGithubPageReact/static/media/naoko.4d6988f290c1a42314c9.jpg",
+    "static/media/cuocdieuhanhthamlang.jpg": "/testGithubPageReact/static/media/cuocdieuhanhthamlang.be11a98a40d25e0a307f.jpg",
+    "static/media/bachdahanh.jpg": "/testGithubPageReact/static/media/bachdahanh.89e38401b420486d59f6.jpg",
+    "static/media/draw-nha-vip4.jpg": "/testGithubPageReact/static/media/draw-nha-vip4.b0fb5ad8e0ef8bfc36a6.jpg",
+    "static/media/draw-nha-vip3.jpg": "/testGithubPageReact/static/media/draw-nha-vip3.b9627fee82f574308852.jpg",
+    "static/media/draw-nha-vip7.jpg": "/testGithubPageReact/static/media/draw-nha-vip7.c5c992992c924e8b863c.jpg",
+    "static/media/draw-nha-vip2.jpg": "/testGithubPageReact/static/media/draw-nha-vip2.9276a769b6d73ca5dd9b.jpg",
+    "static/media/blogimage1.jpg": "/testGithubPageReact/static/media/blogimage1.45d04e978e6880e68ae8.jpg",
+    "static/media/draw-nha-vip5.jpg": "/testGithubPageReact/static/media/draw-nha-vip5.b4d269edab29090b3654.jpg",
+    "static/media/blogimage2.jpg": "/testGithubPageReact/static/media/blogimage2.ffb029c2c3a215699aca.jpg",
+    "static/media/draw-nha-vip6.jpg": "/testGithubPageReact/static/media/draw-nha-vip6.437f15d50b6169cd5b64.jpg",
+    "static/media/blogimage3.jpg": "/testGithubPageReact/static/media/blogimage3.9c3bf18daa0295012652.jpg",
+    "static/media/draw-nha-vip1.jpg": "/testGithubPageReact/static/media/draw-nha-vip1.13e8bd0e28f784cce572.jpg",
+    "static/media/draw-tapve.jpg": "/testGithubPageReact/static/media/draw-tapve.5fa9b714169515ef8054.jpg",
+    "static/media/draw-house-cui1.jpg": "/testGithubPageReact/static/media/draw-house-cui1.b99666a21401e8a8848c.jpg",
     "static/media/aquarium.jpg": "/testGithubPageReact/static/media/aquarium.180b5f26171f6d90f718.jpg",
+    "static/media/draw-train.jpg": "/testGithubPageReact/static/media/draw-train.1f1037872e603f671acd.jpg",
+    "static/media/drawGuitar.jpg": "/testGithubPageReact/static/media/drawGuitar.15164b897a02d788ec90.jpg",
+    "static/media/blogimage4.jpg": "/testGithubPageReact/static/media/blogimage4.9900ff87c69b00b309ea.jpg",
     "static/media/avatar-rotate.jpg": "/testGithubPageReact/static/media/avatar-rotate.b1df1b978d3585ba6c33.jpg",
+    "static/media/draw-house-ga.jpg": "/testGithubPageReact/static/media/draw-house-ga.e37d3000cd61650d4443.jpg",
+    "static/media/bookself.jpg": "/testGithubPageReact/static/media/bookself.b210065023549ea38ef8.jpg",
+    "static/media/imageblogMoitruonglamviec.jpg": "/testGithubPageReact/static/media/imageblogMoitruonglamviec.fadabc2b2db0000dee65.jpg",
     "static/media/lytuan.jpg": "/testGithubPageReact/static/media/lytuan.7c4090b22781102319e9.jpg",
     "static/media/ryanngueyn.jpg": "/testGithubPageReact/static/media/ryanngueyn.62fdb7648fd0a24b5a5a.jpg",
     "static/media/garbageTruck.png": "/testGithubPageReact/static/media/garbageTruck.eb10449d8f75a89c1198.png",
@@ -37,12 +62,12 @@
     "static/media/homosapiens.webp": "/testGithubPageReact/static/media/homosapiens.d452f6afde086a0a9c23.webp",
     "static/media/vs22.png": "/testGithubPageReact/static/media/vs22.a0baf0f26dd36b08f042.png",
     "index.html": "/testGithubPageReact/index.html",
-    "main.947b4f5c.css.map": "/testGithubPageReact/static/css/main.947b4f5c.css.map",
-    "main.9729479a.js.map": "/testGithubPageReact/static/js/main.9729479a.js.map",
-    "453.8220c9d7.chunk.js.map": "/testGithubPageReact/static/js/453.8220c9d7.chunk.js.map"
+    "main.34dac1f5.css.map": "/testGithubPageReact/static/css/main.34dac1f5.css.map",
+    "main.a01cc564.js.map": "/testGithubPageReact/static/js/main.a01cc564.js.map",
+    "453.85f347c4.chunk.js.map": "/testGithubPageReact/static/js/453.85f347c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.947b4f5c.css",
-    "static/js/main.9729479a.js"
+    "static/css/main.34dac1f5.css",
+    "static/js/main.a01cc564.js"
   ]
 }
