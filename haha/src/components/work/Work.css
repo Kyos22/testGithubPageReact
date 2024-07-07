@@ -16,6 +16,9 @@
                   -10px 10px 20px rgba(199, 219, 154, 0.0); 
                   overflow: hidden;
 }
+.container-work .card-work p{
+    color: var(--h1-color);
+}
 .container-work .card-work .title-work{
     display: flex;
     width: 100%;
