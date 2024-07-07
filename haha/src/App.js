@@ -9,6 +9,8 @@ import { Work } from './components/work/Work';
 import { Contact } from './components/contact/Contact';
 import { Work1 } from './components/work1/Work1';
 import { DetailWork } from './components/DetailWork/DetailWork';
+import { Gallery } from './components/work/Gallery';
+import { Blog } from './components/work/Blog';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             </Route>
           </Route>
           <Route path='/detailWork' element={<DetailWork />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/blog' element={<Blog />} />
 
           
         </Routes>

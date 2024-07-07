@@ -170,7 +170,9 @@
     border-radius: 10px;
 
 }
-
+.video-detailWork{
+    margin-top: 50px;
+}
 
 /*=====================================responsive=================================================*/
 @media (max-width:1173px){
@@ -313,6 +315,9 @@
     flex-direction: row;
     gap: 0.2rem;
 }
+.video-detailWork iframe{
+    height: 270px;
+}
 }
 @media (max-width:525px){
  .container-work{
@@ -368,7 +373,9 @@
 .blog-modal p{
     font-size: 14px;
 }
-
+.video-detailWork iframe{
+    height: 210px;
+}
 }
 @media (max-width:391px){
     .blog-modal .gallery-detailwork{

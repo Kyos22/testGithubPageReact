@@ -1,5 +1,7 @@
 import React, { useState,useRef, useEffect } from 'react';
 import '../work/Work.css';
+import { useLocation, useNavigate, Outlet } from 'react-router-dom';
+
 import image from '../images/aquarium.jpg';
 import image1 from '../images/csharp.png';
 import luattamthuc from '../images/books/luattamthuc.png';
@@ -33,13 +35,23 @@ import drawtapve from '../images/draws/draw-tapve.jpg';
 import drawguitar from '../images/draws/drawGuitar.jpg';
 import drawtrain from '../images/draws/draw-train.jpg';
 
+import piano from '../images/sportandmusic/piano.jpg';
+import guitar from '../images/sportandmusic/guitar.jpg';
+import cajon from '../images/sportandmusic/cajon.jpg';
+import guitarCustom from '../images/sportandmusic/guitarCustom.jpg';
+import basket from '../images/sportandmusic/basketball.jpg';
+import gym from '../images/sportandmusic/gym.jpg';
+import billard from '../images/sportandmusic/billard.jpg';
+
 export const Work = () => {
-    
+    const navigate = useNavigate();
+    const location = useLocation();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isModalGalleryOpen, setIsModalGalleryOpen] = useState(false);
     const [isModalVideoOpen, setIsModalVideoOpen] = useState(false);
     const [selectedCard, setSelectedCard] = useState(null);
     const modalRef = useRef();
+    
     const cards = [
         {
             id: 1,
@@ -57,7 +69,7 @@ Tuổi trẻ được ví như một nguồn năng lượng vô tận, một th�
         {
             id: 2,
             title: 'gallery',
-            type: 'Books',
+            type: 'Books (Lifestyle)',
             date: 'October 2023',
             description: 'Books (Lifestyle)',
             imageMain: bookself,
@@ -68,7 +80,7 @@ Tuổi trẻ được ví như một nguồn năng lượng vô tận, một th�
         {
             id: 3,
             title: 'gallery',
-            type: 'Books',
+            type: 'Books (Detective)',
             date: 'October 2023',
             description: 'Books (Detective)',
             imageMain: nghicanx,
@@ -103,11 +115,22 @@ Most importantly, everyone should find a working style that suits them. Whether 
         {
             id: 5,
             title: 'gallery',
-            type: 'Books',
+            type: 'Drawing/Sketch',
             date: 'October 2023',
             description: 'Drawing/Sketch',
             imageMain: drawtrain,
             image: [drawnhavip1,drawnhavip2,drawnhavip3,drawnhavip4,drawnhavip5,drawnhavip6,drawnhavip7,drawtrain,drawguitar,drawhousecui1,drawhousega,drawtapve],
+           
+            details: 'This is a detailed description of the Showroom Management System...'
+        },
+        {
+            id: 6,
+            title: 'gallery',
+            type: 'Music/Sport',
+            date: 'October 2023',
+            description: 'Music/Sport',
+            imageMain: guitar,
+            image: [piano,guitar,cajon,guitarCustom,basket,gym,billard],
            
             details: 'This is a detailed description of the Showroom Management System...'
         },
@@ -117,16 +140,16 @@ Most importantly, everyone should find a working style that suits them. Whether 
     ];
 
     const openModal = (card) => {
-        setSelectedCard(card);
-        checkTitle(card.title);
-        console.log(card.title);
+        
+        checkTitle(card);
+        
     };
 
-    const checkTitle = (title) => {
-        if (title === 'blog') {
-            setIsModalGalleryOpen(true);
-        } else if (title === 'gallery') {
-            setIsModalVideoOpen(true);
+    const checkTitle = (card) => {
+        if (card.title === 'blog') {
+            navigate('/blog', {state:{card}});
+        } else if (card.title === 'gallery') {
+            navigate('/gallery', {state:{card}});
         }
     };
 
@@ -148,7 +171,7 @@ Most importantly, everyone should find a working style that suits them. Whether 
         if (isModalGalleryOpen || isModalVideoOpen) {
             modalRef.current.scrollTo(0, 0);
         }
-    }, [isModalGalleryOpen, isModalVideoOpen]);
+    });
     return (
         <div className='side2' data-aos="fade-down-right">
             <div className="container-work">
@@ -166,16 +189,10 @@ Most importantly, everyone should find a working style that suits them. Whether 
                 ))}
             </div>
 
-            {isModalGalleryOpen && selectedCard && (
+            {/* {isModalGalleryOpen && selectedCard && (
                 <div className="modal" onClick={handleOutsideClick} ref={modalRef}>
                     <div className="modal-content">
                         <span className="close-button" onClick={closeModal}>&times;</span>
-                        {/* <img src={selectedCard.imageMain} alt={selectedCard.title} className="modal-image"/>
-                        <h1>{selectedCard.title}</h1>
-                        <label><i className='bx bx-calendar' style={{ color: '#bcb9b9' }} ></i> {selectedCard.date}</label>
-                        <p>{selectedCard.description}</p>
-                  
-                        <p>{selectedCard.details}</p>  */}
                         <div className="blog-modal">
                             <img src={selectedCard.imageMain} alt={selectedCard.title} className="modal-image"/>
                             <h1>{selectedCard.description}</h1>
@@ -185,8 +202,8 @@ Most importantly, everyone should find a working style that suits them. Whether 
                         </div>
                     </div>
                 </div>
-            )}
-            {isModalVideoOpen && selectedCard && (
+            )} */}
+            {/* {isModalVideoOpen && selectedCard && (
                 <div className="modal" onClick={handleOutsideClick} ref={modalRef}>
                     <div className="modal-content">
                         <span className="close-button" onClick={closeModal}>&times;</span>
@@ -203,7 +220,7 @@ Most importantly, everyone should find a working style that suits them. Whether 
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
 
         </div>
     );

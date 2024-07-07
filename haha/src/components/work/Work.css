@@ -24,8 +24,12 @@
     gap: 1rem;
     margin-top: 15px;
 }
+.container-work .card-work .title-work h1{
+    color: var(--h1-color);
+}
 .container-work .card-work .title-work label{
     font-size: 13px;
+    color: var(--p-color);
 }
 .container-work .card-work .card-image-work{
     width: 100%;
@@ -59,7 +63,7 @@
 }
 
 .modal {
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -116,6 +120,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
+    
 }
 .modal-content .gallery-modal .gallery-image-container .img-gallery{
     width: 100%;
@@ -162,7 +167,9 @@
     height: 100%;
     object-fit: cover;
 }
-
+.detail-blog-modal{
+    margin-bottom: 50px;
+}
 
 /*=====================================responsive=================================================*/
 @media (max-width:1173px){
