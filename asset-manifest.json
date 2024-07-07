@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testGithubPageReact/static/css/main.28494f85.css",
+    "main.css": "/testGithubPageReact/static/css/main.c36772f6.css",
     "main.js": "/testGithubPageReact/static/js/main.f583da27.js",
     "static/js/453.85f347c4.chunk.js": "/testGithubPageReact/static/js/453.85f347c4.chunk.js",
     "static/media/taphoanamiya.jpg": "/testGithubPageReact/static/media/taphoanamiya.e5038ca2d6cddb13ca46.jpg",
@@ -110,12 +110,12 @@
     "static/media/homosapiens.webp": "/testGithubPageReact/static/media/homosapiens.d452f6afde086a0a9c23.webp",
     "static/media/vs22.png": "/testGithubPageReact/static/media/vs22.a0baf0f26dd36b08f042.png",
     "index.html": "/testGithubPageReact/index.html",
-    "main.28494f85.css.map": "/testGithubPageReact/static/css/main.28494f85.css.map",
+    "main.c36772f6.css.map": "/testGithubPageReact/static/css/main.c36772f6.css.map",
     "main.f583da27.js.map": "/testGithubPageReact/static/js/main.f583da27.js.map",
     "453.85f347c4.chunk.js.map": "/testGithubPageReact/static/js/453.85f347c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28494f85.css",
+    "static/css/main.c36772f6.css",
     "static/js/main.f583da27.js"
   ]
 }
